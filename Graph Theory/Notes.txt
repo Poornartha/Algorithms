@@ -1,0 +1,47 @@
+- Bipartite Graphs:
+Bipartite Graphs are 2 way color able graphs where in there are no odd cycles and the graphs them selves can be divided into 2 set of nodes and edges between them.
+e.g. People to Jobs 
+- Complete Graph:
+Edges within the graph exists between every pair of nodes.
+- Representation of Graphs:
+
+- Adjacency Matrix:
+Developing an adjacency matrix where a[i][j] = weight of edge from i -> j
+Pros: Better Lookups -> Constant time
+Cons: 
+- Requires a lot of space
+- For Iteration over graphs with v vertices, it requires v^2 time
+
+- Adjacency List:
+Creating a list for ever node that represents the nodes it visits in pair format i.e.
+(to_node, edge_weight)
+- Very useful for sparse graph
+- Gets Complicated for Dense Graphs.
+- Edge Weight Loopup = O(E)
+- Iteration over all vertices is quiet efficient.
+
+Edge List:
+Un-ordered list of edges. [(from_node, to_node, edge_weight)]
+
+Questions to ask a graph:
+1. Directed / Undirected
+2. 2. Weighted / Not
+3. Sparse / Dense
+4. Graph Representation Technique
+
+COMMON GRAPH THEORY PROBLEMS:
+
+Concepts based on Graph Theory:
+
+- Strongly Connected Graphs:
+Strongly Connected Graphs are the graphs where-in there exits self contained cycles within a directed graph.
+
+- Bridges in a Graph
+Bridges in a graph are the edges of the graph which when removed increase the number of components.
+Bridges are important as they tell us about the vulnerabilities of a graph.
+
+- Minimum Spanning Tree
+Spans the entire tree within minimum time.
+
+- Network Flow
+Answers the question: "With an infinite input source how much 'flow' can we push through the system."

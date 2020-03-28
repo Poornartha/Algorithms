@@ -1,0 +1,27 @@
+
+DFS Overview:
+
+- Time Complexity: O(V + E)
+- It is a traversal technique.
+- In itself DFS is not that useful. However, when used with other algorithms it really shines.
+
+USE CASE:
+
+- Connected Components ->
+
+Sometimes a graph is split into multiple components and it is helpful to identify these various components.
+This can be achived by dfs as it helps us to track down a completed cycle.
+
+- Computing MST
+- Check if the graph is bipartite.
+- Find strongly connected components.
+- Togolocally sort the nodes of a graph.
+- Find bridges and articulation points.
+- Find augmented path in a flow network.
+- Generate mazes.
+
+Topological Sorting:
+
+Longest Path on DAG using topological sorting:
+The trick is to multiply the edge weights with -1 and then find the shortest path and multiplying the answer with -1.
+
